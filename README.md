@@ -1,0 +1,2 @@
+# poketmonSearch
+react / typescript / redux
