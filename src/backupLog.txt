@@ -1,0 +1,18 @@
+<div>
+          {
+          poketmonReducer.success ? <div>
+            {poketmonReducer.poketmon?.abilities.map((ability)=>{
+              return <div key={ability.slot}>
+                <p><Card /></p>
+              </div>
+            })}
+            {poketmonReducer.poketmon?.types.map((type)=>{
+              return <div key={type.slot}>
+                <p>{type.type.name}</p>
+              </div>
+            })}
+            <p>{poketmonReducer.poketmon?.weight}</p>
+            <img src={poketmonReducer.poketmon?.sprites.front_default} alt="poketmonImg" />
+          </div> : <div>`{name.current?.value} is not found`</div>
+          }
+      </div>
